@@ -1,0 +1,127 @@
+.slide-sessao {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-sessao::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.slide-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-left: 50px;
+  color: white;
+  text-align: left;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.slide-texto h2 {
+  margin: 0;
+  max-width: 75%;
+  line-height: 1.2;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.slide-texto p {
+  margin-top: 10px;
+  max-width: 100%;
+  font-size: 1.2rem;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsividade */
+
+@media (max-width: 1024px) {
+  .slide-texto h2 {
+    margin-left: 25px;
+    font-size: 2.3rem;
+  }
+  .slide-texto p {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .slide-texto h2 {
+    font-size: 2rem;
+    max-width: 70%;
+  }
+  .slide-texto p {
+    font-size: 1.2rem;
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .slide-texto p {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+  .slide-texto h2 {
+    font-size: 1.525rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .slide {
+    height: auto; /* Deixa a altura da imagem ser flexível */
+  }
+  .slide img {
+    height: auto; /* Garante que a imagem mantenha a proporção */
+  }
+}
+
+@media (max-width: 470px) {
+  .card-produto a {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 447px) {
+  .card-produto a {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .slide-texto h2 {
+    font-size: 1.325rem !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .slide-texto h2 {
+    font-size: 1.225rem !important;
+    max-width: 90%;
+  }
+  .introducao-conteudo h1 {
+    font-size: 1.225rem !important;
+  }
+  .card-produto a {
+    width: 100%;
+    font-size: 0.6rem !important;
+  }
+  .coluna-direita a {
+    font-size: 0.8rem !important;
+  }
+}

@@ -1,0 +1,40 @@
+@import "./global/global.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+
+@import "./global/header.css";
+@import "./global/slides.css";
+@import "./global/formulario.css";
+
+@import "./global/footer.css";
+
+@import "./utilidades/componentes.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/produtos-home.css";
+@import "./home/setores.css";
+@import "./home/parceiros.css";
+@import "./home/sessao-contato.css";
+
+/* Empresa */
+@import "./empresa/slide.css";
+@import "./empresa/nossa-historia.css";
+@import "./empresa/missa-visao-valores.css";
+@import "./empresa/parceiros.css";
+@import "./empresa/tecnologia.css";
+
+/* Contato */
+@import "./contato/destaque.css";
+@import "./contato/contato.css";
+
+/* Produtos */
+@import "./produtos/produtos.css";
+@import "./produtos/rolamentos.css";
+@import "./produtos/mancais.css";
+@import "./produtos/polias.css";
+@import "./produtos/retentores.css";
+@import "./produtos/motores.css";
+@import "./produtos/correias-industriais.css";
+@import "./produtos/correias-transportadoras.css";
+@import "./produtos/buchas-fixacao.css";

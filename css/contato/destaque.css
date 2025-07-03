@@ -1,0 +1,95 @@
+.container-destaque {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.destaque {
+  background: linear-gradient(90deg, var(--cor-p1) 0%, var(--cor-p2) 100%);
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.titulo {
+  display: block;
+  max-width: 60%;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.destaque button {
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+  .destaque {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .titulo {
+    max-width: 100%;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .destaque button {
+    width: auto;
+    margin-right: 0;
+    align-items: left;
+  }
+}
+
+@media (max-width: 650px) {
+  .titulo {
+    font-size: 1.325rem;
+  }
+  .destaque button {
+    font-size: 0.975rem;
+  }
+  .destaque button a {
+    font-size: 0.8rem !important;
+    text-align: left;
+  }
+}
+
+@media (max-width: 540px) {
+  .destaque {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .destaque {
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .destaque button {
+    padding: 12px;
+  }
+}
